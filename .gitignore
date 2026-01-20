@@ -1,0 +1,12 @@
+# JetBrains IDEs
+
+.idea/
+*.iml
+
+# Node.js
+
+node_modules/
+
+# Next.js
+
+.next/
