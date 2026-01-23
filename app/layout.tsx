@@ -1,6 +1,7 @@
 import { Inter } from 'next/font/google'
 import type { PropsWithChildren } from 'react'
 import './globals.css'
+import { Topbar } from '@/components/topbar'
 
 const inter = Inter({
   subsets: ['latin'],
@@ -10,7 +11,12 @@ const inter = Inter({
 const RootLayout = ({ children }: PropsWithChildren) => {
   return (
     <html lang="en" className={inter.variable}>
-      <body>{children}</body>
+      <body className="min-h-screen bg-white text-foreground">
+        <div className="mx-auto flex min-h-screen w-full max-w-5xl flex-col bg-background shadow-sm">
+          <Topbar />
+          <main className="flex-1">{children}</main>
+        </div>
+      </body>
     </html>
   )
 }
