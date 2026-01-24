@@ -2,7 +2,7 @@ import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Separator } from '@/components/ui/separator'
 
-export function SubscribeCard() {
+export function SubscriptionCard() {
   return (
     <article className="mx-auto max-w-4xl bg-[#f9f6f1] px-12 py-20 shadow-sm space-y-12 text-center">
       <header className="space-y-6">
@@ -15,9 +15,8 @@ export function SubscribeCard() {
         </h2>
 
         <p className="mx-auto max-w-lg font-serif leading-relaxed text-muted-foreground">
-          Envío pequeñas notas a lo largo del año.  
-          Sin ruido, solo noticias tranquilas sobre nuevas piezas
-          y momentos del proceso.
+          Envío pequeñas notas a lo largo del año. Sin ruido, solo noticias
+          tranquilas sobre nuevas piezas y momentos del proceso.
         </p>
       </header>
       <Separator className="mx-auto max-w-sm opacity-30" />

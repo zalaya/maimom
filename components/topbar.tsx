@@ -19,9 +19,15 @@ export const Topbar = () => {
           </a>
           <a
             href="#contact-letter"
-            className="font-handwriting hover:text-primary transition-colors"
+            className="hover:text-primary transition-colors"
           >
             Escribir
+          </a>
+          <a
+            href="#subscription"
+            className="hover:text-primary transition-colors"
+          >
+            Suscripción
           </a>
         </nav>
       </div>

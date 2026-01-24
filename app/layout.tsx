@@ -1,8 +1,8 @@
 import { Inter } from 'next/font/google'
 import type { PropsWithChildren } from 'react'
 import './globals.css'
-import { Topbar } from '@/components/topbar'
 import Footer from '@/components/footer'
+import { Topbar } from '@/components/topbar'
 
 const inter = Inter({
   subsets: ['latin'],
