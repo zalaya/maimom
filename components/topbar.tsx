@@ -2,8 +2,14 @@ export const Topbar = () => {
   return (
     <header className="sticky top-0 z-50 border-b bg-background/80 backdrop-blur">
       <div className="mx-auto flex h-14 max-w-5xl items-center justify-between px-6">
-        <span className="font-serif tracking-tight">Maimom</span>
-
+        <a
+          href="https://github.com/zalaya/maimom"
+          target="_blank"
+          rel="noopener noreferrer"
+          className="font-medium text-sm"
+        >
+          Maimom
+        </a>
         <nav className="flex items-center gap-6 font-medium text-sm">
           <a
             href="#collection"

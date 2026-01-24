@@ -14,7 +14,7 @@ export function PolaroidPhoto({
     <figure
       className={cn(
         'group relative bg-white p-4 shadow-lg',
-        'w-[260px] sm:w-[300px]',
+        'w-65 sm:w-75',
         'transition-transform duration-300 ease-out',
         'hover:rotate-1'
       )}
@@ -39,7 +39,7 @@ export function PolaroidPhoto({
       />
 
       {caption && (
-        <figcaption className="mt-3 text-center font-handwriting text-sm text-muted-foreground">
+        <figcaption className="text-center font-handwriting text-sm text-muted-foreground">
           {caption}
         </figcaption>
       )}

@@ -19,7 +19,7 @@ export const SectionHeader = ({
         {name}
       </span>
       <h1 className="font-serif text-3xl tracking-tight">{title}</h1>
-      <p className="font-serif text-muted-foreground max-w-md">{subtitle}</p>
+      <p className="font-serif text-muted-foreground">{subtitle}</p>
       <Separator className="mt-10" />
     </header>
   )
