@@ -1,4 +1,4 @@
-import Image from 'next/image'
+import Image, { type StaticImageData } from 'next/image'
 import { cn } from '@/lib/utilities'
 
 export function PolaroidPhoto({
@@ -6,7 +6,7 @@ export function PolaroidPhoto({
   caption,
   rotate = -2
 }: {
-  src: string
+  src: string | StaticImageData
   caption?: string
   rotate?: number
 }) {

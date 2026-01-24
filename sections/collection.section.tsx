@@ -2,6 +2,8 @@ import { NoteWithPhoto } from '@/components/note-with-photo'
 import { PaperNote } from '@/components/paper-note'
 import { PolaroidPhoto } from '@/components/polaroid-photo'
 import { Section } from '@/components/section'
+import project1Image from '../public/images/project-1.jpg'
+import project2Image from '../public/images/project-2.jpg'
 
 const projects = [
   {
@@ -10,7 +12,7 @@ const projects = [
     description:
       'Gallina suave y acogedora, confeccionada a mano con telas cálidas y detalles bordados. Pensada para dar un toque tierno y divertido a cualquier rincón de la casa.',
     year: '2025',
-    imageUrl: '/images/project-1.jpg',
+    image: project1Image,
     tags: ['Gallina', 'Hecho a mano', 'Decoración']
   },
   {
@@ -19,7 +21,7 @@ const projects = [
     description:
       'Cerdito de tela con forma redondeada y expresión simpática, cosido a mano con mucho cariño y remates cuidados. Ideal como pieza decorativa o compañero de estantería.',
     year: '2025',
-    imageUrl: '/images/project-2.jpg',
+    image: project2Image,
     tags: ['Cerdito', 'Hecho a mano', 'Colección']
   }
 ]
@@ -39,7 +41,7 @@ const CollectionSection = () => {
       {projects.map((project, index) => (
         <NoteWithPhoto key={project.title} reversed={index % 2 !== 0}>
           <PolaroidPhoto
-            src={project.imageUrl}
+            src={project.image}
             caption={project.subtitle}
             rotate={index % 2 === 0 ? -2 : 2}
           />
