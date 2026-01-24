@@ -1,3 +1,4 @@
 export default {
-  reactCompiler: true
+  reactCompiler: true,
+  output: 'export'
 }

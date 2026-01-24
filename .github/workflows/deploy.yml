@@ -26,8 +26,6 @@ jobs:
         run: bun install --frozen-lockfile
       - name: Build
         run: bun run build
-      - name: Export static site
-        run: bunx next export -o out
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
