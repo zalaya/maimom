@@ -1,4 +1,6 @@
 export default {
   reactCompiler: true,
-  output: 'export'
+  output: 'export',
+  basePath: '/maimom',
+  assetPrefix: '/maimom/'
 }
