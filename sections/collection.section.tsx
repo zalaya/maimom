@@ -47,7 +47,7 @@ const CollectionSection = () => {
               src={project.image}
               caption={project.subtitle}
               rotation={isEven ? '-rotate-2' : 'rotate-2'}
-              hoverRotation={isEven ? 'rotate-0' : 'rotate-1'}
+              hoverRotation="rotate-0"
             />
             <PaperNote
               section={project.year}

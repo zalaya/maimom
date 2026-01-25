@@ -12,7 +12,7 @@ export default function WaxSeal({ onSeal }: { onSeal: () => void }) {
         'shadow-[0_6px_8px_rgba(0,0,0,0.3)]',
         'transition-transform duration-200 ease-out',
         'active:scale-95',
-        'animate-wax-breathe'
+        'animate-wax-breathe cursor-pointer'
       )}
     >
       <span className="absolute inset-2 rounded-full bg-red-800 opacity-90" />
