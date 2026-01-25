@@ -1,8 +1,14 @@
-import { Inter } from 'next/font/google'
+import { Caveat, Inter } from 'next/font/google'
 import type { PropsWithChildren } from 'react'
 import './globals.css'
-import Footer from '@/components/footer'
-import { Topbar } from '@/components/topbar'
+import Footer from '@/components/layout/footer'
+import { Topbar } from '@/components/layout/topbar'
+
+const handwriting = Caveat({
+  subsets: ['latin'],
+  variable: '--font-handwriting',
+  weight: ['400', '500']
+})
 
 const inter = Inter({
   subsets: ['latin'],
@@ -11,7 +17,7 @@ const inter = Inter({
 
 const RootLayout = ({ children }: PropsWithChildren) => {
   return (
-    <html lang="en" className={inter.variable}>
+    <html lang="en" className={`${inter.variable} ${handwriting.variable}`}>
       <body className="min-h-screen bg-white text-foreground">
         <div className="mx-auto flex min-h-screen w-full max-w-5xl flex-col bg-background shadow-sm">
           <Topbar />

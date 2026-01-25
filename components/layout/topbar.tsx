@@ -23,12 +23,6 @@ export const Topbar = () => {
           >
             Escribir
           </a>
-          <a
-            href="#subscription"
-            className="hover:text-primary transition-colors"
-          >
-            Suscripción
-          </a>
         </nav>
       </div>
     </header>

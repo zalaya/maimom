@@ -21,24 +21,20 @@ export function PaperNote({
       )}
     >
       <div className="pointer-events-none absolute inset-0 bg-[linear-gradient(to_bottom,transparent_23px,rgba(0,0,0,0.04)_24px)] bg-size-[100%_24px]" />
-
       <div className="relative space-y-4">
         {section && (
           <span className="font-handwriting text-sm text-muted-foreground">
             {section}
           </span>
         )}
-
         <h2 className="font-serif text-2xl">{title}</h2>
-
         <p className="font-serif leading-relaxed text-muted-foreground">
           {content}
         </p>
-
         {footer && (
           <>
             <Separator className="opacity-80" />
-            <p className="font-handwriting text-sm text-muted-foreground">
+            <p className="font-handwriting text-xl text-muted-foreground">
               {footer}
             </p>
           </>

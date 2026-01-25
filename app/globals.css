@@ -128,3 +128,29 @@
     scroll-behavior: smooth;
   }
 }
+
+@layer utilities {
+  @keyframes wax-breathe {
+    0%,
+    100% {
+      transform: scale(1);
+      box-shadow: 0 6px 8px rgba(0, 0, 0, 0.3);
+    }
+    50% {
+      transform: scale(1.075);
+      box-shadow: 0 8px 12px rgba(0, 0, 0, 0.35);
+    }
+  }
+
+  @media (prefers-reduced-motion: no-preference) {
+    .animate-wax-breathe {
+      animation: wax-breathe 2.5s ease-in-out infinite;
+    }
+  }
+}
+
+@layer utilities {
+  .font-handwriting {
+    font-family: var(--font-handwriting), cursive;
+  }
+}

@@ -1,8 +1,10 @@
+const isProd = process.env.NODE_ENV === 'production'
+
 export default {
   reactCompiler: true,
   output: 'export',
-  basePath: '/maimom',
-  assetPrefix: '/maimom/',
+  basePath: isProd ? '/maimom' : '',
+  assetPrefix: isProd ? '/maimom/' : '',
   images: {
     unoptimized: true
   }

@@ -1,7 +1,7 @@
+import { Section } from '@/components/layout/section'
 import { NoteWithPhoto } from '@/components/note-with-photo'
 import { PaperNote } from '@/components/paper-note'
 import { PolaroidPhoto } from '@/components/polaroid-photo'
-import { Section } from '@/components/section'
 import project1Image from '../public/images/project-1.jpg'
 import project2Image from '../public/images/project-2.jpg'
 
@@ -38,22 +38,26 @@ const CollectionSection = () => {
       }}
       isFirst
     >
-      {projects.map((project, index) => (
-        <NoteWithPhoto key={project.title} reversed={index % 2 !== 0}>
-          <PolaroidPhoto
-            src={project.image}
-            caption={project.subtitle}
-            rotate={index % 2 === 0 ? -2 : 2}
-          />
+      {projects.map((project, index) => {
+        const isEven = index % 2 === 0
 
-          <PaperNote
-            section={project.year}
-            title={project.title}
-            content={project.description}
-            footer={project.tags.join(' · ')}
-          />
-        </NoteWithPhoto>
-      ))}
+        return (
+          <NoteWithPhoto key={project.title} reversed={!isEven}>
+            <PolaroidPhoto
+              src={project.image}
+              caption={project.subtitle}
+              rotation={isEven ? '-rotate-2' : 'rotate-2'}
+              hoverRotation={isEven ? 'rotate-0' : 'rotate-1'}
+            />
+            <PaperNote
+              section={project.year}
+              title={project.title}
+              content={project.description}
+              footer={project.tags.join(' · ')}
+            />
+          </NoteWithPhoto>
+        )
+      })}
     </Section>
   )
 }
