@@ -18,7 +18,7 @@ export const Topbar = () => {
             Colección
           </a>
           <a
-            href="#contact-letter"
+            href="#contact-note"
             className="hover:text-primary transition-colors"
           >
             Escribir
