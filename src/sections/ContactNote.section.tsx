@@ -1,5 +1,5 @@
-import { ContactNote } from '@/components/contact-note'
-import { Section } from './section'
+import { ContactNote } from '@/components/ContactNote'
+import { Section } from '../components/Section'
 
 const ContactNoteSection = () => {
   return (

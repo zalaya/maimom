@@ -1,6 +1,6 @@
-import CollectionSection from './components/collection-section'
-import ContactNoteSection from './components/contact-note-section'
-import Footer from './components/footer'
+import CollectionSection from './sections/Collection.section'
+import ContactNoteSection from './sections/ContactNote.section'
+import Footer from './components/Footer'
 import { Topbar } from './components/topbar'
 
 export const App = () => {

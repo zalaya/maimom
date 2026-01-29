@@ -1,7 +1,7 @@
 import project1Image from '/images/project-1.jpg'
 import project2Image from '/images/project-2.jpg'
-import NoteWithPhoto from './NoteWithPhoto/NoteWithPhoto'
-import { Section } from './section'
+import NoteWithPhoto from '../components/NoteWithPhoto/NoteWithPhoto'
+import { Section } from '../components/Section'
 
 const projects = [
   {
