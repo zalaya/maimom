@@ -10,3 +10,14 @@ import { twMerge } from 'tailwind-merge'
 export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs))
 }
+
+/**
+ * Generates a unique key string.
+ * @returns A unique string key.
+ */
+export function uniqueKey() {
+  const time = Date.now().toString(36)
+  const randomNumber = Math.random().toString(36).slice(2, 8)
+
+  return `${time}${randomNumber}`
+}
