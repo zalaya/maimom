@@ -4,8 +4,8 @@ import { useState } from 'react'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
 import { cn } from '@/lib/utils'
-import ThankYouMessage from './thank-you-message'
-import WaxSeal from './wax-seal'
+import ThankYouMessage from './ThankYouMessage'
+import WaxSeal from './WaxSeal'
 
 export function ContactNote() {
   const [sent, setSent] = useState(false)
