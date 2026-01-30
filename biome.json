@@ -28,12 +28,6 @@
       "suspicious": {
         "noShadowRestrictedNames": "off",
         "noUnknownAtRules": "off"
-      },
-      "performance": {
-        "noImgElement": "off"
-      },
-      "style": {
-        "noNonNullAssertion": "off"
       }
     },
     "domains": {
