@@ -1,0 +1,87 @@
+[
+  {
+    "key": "alt+d",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        { "command": "workbench.action.terminal.new" },
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "bun development\r"
+          }
+        }
+      ]
+    },
+    "when": "terminalProcessSupported"
+  },
+  {
+    "key": "alt+b",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        { "command": "workbench.action.terminal.new" },
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "bun run build\r"
+          }
+        }
+      ]
+    },
+    "when": "terminalProcessSupported"
+  },
+  {
+    "key": "alt+u",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        { "command": "workbench.action.terminal.new" },
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "bun biome\r"
+          }
+        }
+      ]
+    },
+    "when": "terminalProcessSupported"
+  },
+  {
+    "key": "alt+i",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        { "command": "workbench.action.terminal.new" },
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "bun install\r"
+          }
+        }
+      ]
+    },
+    "when": "terminalProcessSupported"
+  },
+  {
+    "key": "alt+c",
+    "command": "runCommands",
+    "args": {
+      "commands": [
+        { "command": "workbench.action.terminal.new" },
+        {
+          "command": "workbench.action.terminal.sendSequence",
+          "args": {
+            "text": "bun clean\r"
+          }
+        }
+      ]
+    },
+    "when": "terminalProcessSupported"
+  },
+  {
+    "key": "alt+ctrl+k",
+    "command": "workbench.action.terminal.killAll",
+    "when": "terminalProcessSupported"
+  }
+]
