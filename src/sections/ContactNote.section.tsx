@@ -1,5 +1,5 @@
 import { ContactNote } from '@/components/ContactNote'
-import { Section } from '../components/Section'
+import { Section } from '@/components/Section'
 
 const ContactNoteSection = () => {
   return (

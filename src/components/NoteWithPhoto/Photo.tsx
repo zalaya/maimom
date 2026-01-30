@@ -1,5 +1,5 @@
+import Pin from '@/components/NoteWithPhoto/Pin'
 import { cn } from '@/lib/utils'
-import Pin from './Pin'
 
 export type Rotation =
   | '-rotate-3'

@@ -1,6 +1,6 @@
 import type { ReactNode } from 'react'
+import { SectionHeader } from '@/components/SectionHeader'
 import { cn } from '@/lib/utils'
-import { SectionHeader } from './SectionHeader'
 
 interface SectionProps {
   header: {

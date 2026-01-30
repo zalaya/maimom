@@ -1,7 +1,7 @@
-import CollectionSection from './sections/Collection.section'
-import ContactNoteSection from './sections/ContactNote.section'
 import Footer from './components/Footer'
 import { Topbar } from './components/topbar'
+import CollectionSection from './sections/Collection.section'
+import ContactNoteSection from './sections/ContactNote.section'
 
 export const App = () => {
   return (

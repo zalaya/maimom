@@ -1,11 +1,11 @@
 'use client'
 
 import { useState } from 'react'
+import ThankYouMessage from '@/components/ThankYouMessage'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
+import WaxSeal from '@/components/WaxSeal'
 import { cn } from '@/lib/utils'
-import ThankYouMessage from './ThankYouMessage'
-import WaxSeal from './WaxSeal'
 
 export function ContactNote() {
   const [sent, setSent] = useState(false)

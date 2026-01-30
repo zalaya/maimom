@@ -1,5 +1,5 @@
+import { Separator } from '@/components/ui/separator'
 import { cn } from '@/lib/utils'
-import { Separator } from './ui/separator'
 
 interface SectionHeaderProps {
   name: string

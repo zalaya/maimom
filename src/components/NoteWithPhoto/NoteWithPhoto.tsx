@@ -1,7 +1,7 @@
+import Note from '@/components/NoteWithPhoto/Note'
+import type { Rotation } from '@/components/NoteWithPhoto/Photo'
+import Photo from '@/components/NoteWithPhoto/Photo'
 import { cn } from '@/lib/utils'
-import Note from './Note'
-import type { Rotation } from './Photo'
-import Photo from './Photo'
 
 interface NoteWithPhotoProps {
   isReversed?: boolean
